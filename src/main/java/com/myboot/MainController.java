@@ -16,8 +16,14 @@ public  class MainController {
 
   @RequestMapping("/main.do")
   public String hello(Model model){
-	System.out.println("안녕하세요");
-	return "main";
+   System.out.println("안녕하세요");
+   return "main";	
+  }
+  
+  @RequestMapping("/reservation.do")
+  public String reservation(Model model){
+   //System.out.println("안녕하세요");
+   return "reservation";	
   }
   
 }
